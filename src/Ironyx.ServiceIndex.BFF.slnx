@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Ironyx.ServiceIndex.BFF.Application/Ironyx.ServiceIndex.BFF.Application.csproj" Id="b7488443-2539-4a69-8dee-30d929204531" />
+  <Project Path="Ironyx.ServiceIndex.BFF.Test.Unit/Ironyx.ServiceIndex.BFF.Test.Unit.csproj" Id="87cadb32-0f13-4235-815b-5373e337f44e" />
+  <Project Path="Ironyx.ServiceIndex.BFF/Ironyx.ServiceIndex.BFF.csproj" Id="22b825a8-0dd2-45c8-b76f-57a39c18047f" />
+</Solution>
