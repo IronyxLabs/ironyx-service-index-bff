@@ -16,7 +16,7 @@ namespace Ironyx.ServiceIndex.BFF.Application
         {
             var services = await _sender.GetAsync<GetRegistrationsQuery, IEnumerable<GetRegistrationsQuery.Result>>(new GetRegistrationsQuery(), cancellationToken);
 
-            return new Overview { ServiceCount = services!.Count() };
+            return new Overview { ServiceCount = services!.Count(), HealthyCount = 0, UnhealthyCount = 0, DegradedCount = 0 };
         }
     }
 }
