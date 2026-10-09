@@ -6,8 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSerilog((_, configuration) => configuration.ReadFrom.Configuration(builder.Configuration));
 
 builder.UseKernel()
-    .AddGrpc(5000)
-    .AddCommandSender(new Uri("http://localhost:5900/"));
+    .AddGrpc(builder => builder.AddRequestSender(new Uri("http://localhost:5900/")));
 
 builder.Services.AddControllers();
 
